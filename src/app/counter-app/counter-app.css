@@ -1,0 +1,37 @@
+.btn{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-color: bisque;
+    color: white;
+    text-align: center;
+     border-radius: 25px;
+     border: 1px solid brown;
+}
+.bg-red{
+    background-color: rgb(180, 63, 21);
+}
+.bg-green{
+    background-color: green;
+}
+.bg-black{
+    background-color: black;
+}
+.btn:hover{
+    background-color: rgb(96, 93, 89);
+  }
+ h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blueviolet;
+ }
+ .count{
+    width: 100px;
+    background:rgb(199, 190, 190);
+    text-align: center;
+    border-radius: 34px;
+    padding:10px;
+    margin: auto;
+    margin-bottom: 30px;
+    
+ }

@@ -1,0 +1,21 @@
+<p>data-binding works!</p>
+
+<h2>Interpolation:-</h2>
+<p>My Course name is {{languageName}}</p>
+<input type="text" value="{{name}}">
+
+<h2>Property binding:-</h2>
+<input type="checkbox" name="id">Demo checkbox<br><br>
+<input type="[text]" name="id">Property binding<br><br>
+<input type="text" name="id" [value]="courseName"><br><br>
+
+<img [src]="imgUrl" [alt]="imgMessage">
+
+<h2>Event Binding:-</h2>
+
+<button type="button" (click)="greet()">Greet</button><br><br>
+<span (click)="spanMsg()">Click me</span>
+<h2>Two-Way Binding:-</h2>
+
+<input type="text" name="id" [(ngModel)]="empName">
+<p>{{empName}}</p>
