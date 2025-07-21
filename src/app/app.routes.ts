@@ -1,3 +1,29 @@
 import { Routes } from '@angular/router';
+import { Student } from './student/student';
+import { DataBinding } from './data-binding/data-binding';
+import { StrucuralDirectives } from './strucural-directives/strucural-directives';
+import { Typescript } from './typescript/typescript';
+import { CounterApp } from './counter-app/counter-app';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    {
+        path:"student",
+        component:Student
+    },
+    {    path:"databinding",
+        component:DataBinding
+    },
+    {
+        path:"directives",
+        component:StrucuralDirectives
+    },
+    {
+        path:"typescript",
+        component:Typescript
+    },
+    {
+        path:"couterapp",
+        component:CounterApp
+
+    }
+];

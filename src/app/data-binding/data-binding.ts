@@ -25,5 +25,4 @@ spanMsg() {
   alert("Span Click works...!");
 }
 
-
 }
