@@ -9,6 +9,7 @@ import { NgFor } from './ng-for/ng-for';
 import { NgSwitch } from './ng-switch/ng-switch';
 import { Component, Pipe } from '@angular/core';
 import { Practpipe } from './practpipe/practpipe';
+import { Forms } from './forms/forms';
 
 export const routes: Routes = [
     {
@@ -46,6 +47,10 @@ export const routes: Routes = [
      {
         path:"pipe",
         component:Practpipe
+     },
+     {
+        path:"forms",
+        component:Forms
      }
    
 ];
