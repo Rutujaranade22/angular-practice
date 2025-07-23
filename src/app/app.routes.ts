@@ -5,6 +5,7 @@ import { StrucuralDirectives } from './strucural-directives/strucural-directives
 import { Typescript } from './typescript/typescript';
 import { CounterApp } from './counter-app/counter-app';
 import { NgIf } from './ng-if/ng-if';
+import { NgFor } from './ng-for/ng-for';
 
 export const routes: Routes = [
     {
@@ -30,5 +31,9 @@ export const routes: Routes = [
     {
         path:"ngIF",
         component:NgIf
+    },
+    {
+        path:"ngFor",
+        component:NgFor
     }
 ];
