@@ -1,0 +1,23 @@
+<p>ng-switch works!</p>
+
+<h2>Select a fruit 🍎🍌🍇</h2>
+
+<select [(ngModel)]="selectedFruit" class="form-control w-25 mb-3">
+  <option value="">-- Choose --</option>
+  <option value="apple">Apple</option>
+  <option value="banana">Banana</option>
+  <option value="grapes">Grapes</option>
+</select>
+
+<!-- ngSwitch starts here -->
+<div [ngSwitch]="selectedFruit">
+  <div *ngSwitchCase="'apple'">🍎 You selected Apple!</div>
+  <div *ngSwitchCase="'banana'">🍌 You selected Banana!</div>
+  <div *ngSwitchCase="'grapes'">🍇 You selected Grapes!</div>
+  <div *ngSwitchDefault>Please select a fruit from the list.</div>
+</div>
+
+
+
+
+

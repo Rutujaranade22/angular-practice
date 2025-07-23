@@ -6,6 +6,7 @@ import { Typescript } from './typescript/typescript';
 import { CounterApp } from './counter-app/counter-app';
 import { NgIf } from './ng-if/ng-if';
 import { NgFor } from './ng-for/ng-for';
+import { NgSwitch } from './ng-switch/ng-switch';
 
 export const routes: Routes = [
     {
@@ -35,5 +36,9 @@ export const routes: Routes = [
     {
         path:"ngFor",
         component:NgFor
+    },
+    {
+        path:"ngswitch",
+        component:NgSwitch
     }
 ];
