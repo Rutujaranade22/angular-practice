@@ -7,6 +7,7 @@ import { CounterApp } from './counter-app/counter-app';
 import { NgIf } from './ng-if/ng-if';
 import { NgFor } from './ng-for/ng-for';
 import { NgSwitch } from './ng-switch/ng-switch';
+import { Component, Pipe } from '@angular/core';
 
 export const routes: Routes = [
     {
@@ -40,5 +41,7 @@ export const routes: Routes = [
     {
         path:"ngswitch",
         component:NgSwitch
-    }
+    },
+     
+   
 ];
