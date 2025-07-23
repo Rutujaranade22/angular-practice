@@ -8,6 +8,7 @@ import { NgIf } from './ng-if/ng-if';
 import { NgFor } from './ng-for/ng-for';
 import { NgSwitch } from './ng-switch/ng-switch';
 import { Component, Pipe } from '@angular/core';
+import { Practpipe } from './practpipe/practpipe';
 
 export const routes: Routes = [
     {
@@ -42,6 +43,9 @@ export const routes: Routes = [
         path:"ngswitch",
         component:NgSwitch
     },
-     
+     {
+        path:"pipe",
+        component:Practpipe
+     }
    
 ];
