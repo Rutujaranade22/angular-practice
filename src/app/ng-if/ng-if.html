@@ -1,0 +1,6 @@
+<p>ng-if works!</p>
+<input type="text" [(ngModel)]="userName"  placeholder="Enter a name"class="form-control w-25 mb-3">
+
+<div *ngIf="userName">
+    <h3>Hello,{{userName}}</h3>
+</div>
