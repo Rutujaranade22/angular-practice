@@ -10,6 +10,7 @@ import { NgSwitch } from './ng-switch/ng-switch';
 import { Component, Pipe } from '@angular/core';
 import { Practpipe } from './practpipe/practpipe';
 import { Forms } from './forms/forms';
+import { Reactiveform } from './reactiveform/reactiveform';
 
 export const routes: Routes = [
     {
@@ -51,6 +52,10 @@ export const routes: Routes = [
      {
         path:"forms",
         component:Forms
+     },
+     {
+     path:"reactiveform",
+     component:Reactiveform
      }
    
 ];
