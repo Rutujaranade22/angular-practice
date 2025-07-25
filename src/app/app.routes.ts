@@ -11,6 +11,7 @@ import { Component, Pipe } from '@angular/core';
 import { Practpipe } from './practpipe/practpipe';
 import { Forms } from './forms/forms';
 import { Reactiveform } from './reactiveform/reactiveform';
+import { EventRegistration } from './event-registration/event-registration';
 
 export const routes: Routes = [
     {
@@ -56,6 +57,10 @@ export const routes: Routes = [
      {
      path:"reactiveform",
      component:Reactiveform
+     },
+     {
+        path:"eventregi",
+        component:EventRegistration
      }
    
 ];
