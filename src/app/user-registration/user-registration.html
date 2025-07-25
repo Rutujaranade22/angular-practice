@@ -1,0 +1,17 @@
+<p>user-registration works!</p>
+<form #regForm="ngForm" (ngSubmit)="onSubmit(regForm)">
+  <h2>Registration</h2>
+  <input name="fullName" [(ngModel)]="user.fullName" placeholder="Full Name" required><br><br>
+  <input name="username" [(ngModel)]="user.username" placeholder="Username" required><br><br>
+  <input name="email" [(ngModel)]="user.email" placeholder="Email" type="email" required><br><br>
+  <input name="phone" [(ngModel)]="user.phone" placeholder="Phone Number" required><br><br>
+  <input name="password" [(ngModel)]="user.password" placeholder="Password" type="password" required><br><br>
+  <input name="confirmPassword" [(ngModel)]="user.confirmPassword" placeholder="Confirm Password" type="password" required><br><br>
+
+  <label>Gender:</label>
+  <label><input type="radio" name="gender" [(ngModel)]="user.gender" value="Male"> Male</label>
+  <label><input type="radio" name="gender" [(ngModel)]="user.gender" value="Female"> Female</label><br><br>
+  <label><input type="radio" name="gender" [(ngModel)]="user.gender" value="Prefer not to say"> Prefer not to say</label><br><br>
+
+  <button type="submit">Register</button>
+</form>

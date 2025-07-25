@@ -12,6 +12,7 @@ import { Practpipe } from './practpipe/practpipe';
 import { Forms } from './forms/forms';
 import { Reactiveform } from './reactiveform/reactiveform';
 import { EventRegistration } from './event-registration/event-registration';
+import { UserRegistration } from './user-registration/user-registration';
 
 export const routes: Routes = [
     {
@@ -61,6 +62,10 @@ export const routes: Routes = [
      {
         path:"eventregi",
         component:EventRegistration
+     },
+     {
+        path:"userregi",
+        component:UserRegistration
      }
    
 ];
