@@ -1,0 +1,10 @@
+<p>api-integration works!</p>
+
+<div *ngFor="let product of productList; trackBy: trackByProductId">
+  <ul>
+    <li><b>Name:</b> {{ product.title }}</li>
+    <li><b>Price:</b> {{ product.price }}</li>
+    <li><b>Rating:</b> {{ product.rating }}</li>
+    <li><b>Category:</b> {{ product.category }}</li>
+  </ul>
+</div>

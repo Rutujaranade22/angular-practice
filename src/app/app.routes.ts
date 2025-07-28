@@ -13,6 +13,7 @@ import { Forms } from './forms/forms';
 import { Reactiveform } from './reactiveform/reactiveform';
 import { EventRegistration } from './event-registration/event-registration';
 import { UserRegistration } from './user-registration/user-registration';
+import { ApiIntegration } from './api-integration/api-integration';
 
 export const routes: Routes = [
     {
@@ -66,6 +67,10 @@ export const routes: Routes = [
      {
         path:"userregi",
         component:UserRegistration
+     },
+     {
+        path:"api-integration",
+        component:ApiIntegration
      }
    
 ];
