@@ -1,0 +1,42 @@
+<p>student-crud works!</p>
+<div class="container mt-4">
+  <h2 style="text-align: center; color: blueviolet;">Student Management</h2>
+
+  <form (ngSubmit)="addStudent()" class="mb-4">
+    <div class="mb-3">
+      <label>Name</label>
+      <input type="text" [(ngModel)]="student.name" name="name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Email</label>
+      <input type="email" [(ngModel)]="student.email" name="email" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-success" *ngIf="student.id === 0">Add Student</button> 
+    <button type="submit" class="btn btn-primary" *ngIf="student.id !== 0">Update Student</button>
+    <button type="button" class="btn btn-secondary" (click)="resetForm()">Reset</button>
+  </form>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr No</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of studentList; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ s.name }}</td>
+        <td>{{ s.email }}</td>
+        <td>
+          <button class="btn btn-info btn-sm" (click)="editStudent(s)">Edit</button>
+          <button class="btn btn-danger btn-sm" (click)="deleteStudent(s.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

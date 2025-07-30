@@ -14,6 +14,7 @@ import { Reactiveform } from './reactiveform/reactiveform';
 import { EventRegistration } from './event-registration/event-registration';
 import { UserRegistration } from './user-registration/user-registration';
 import { ApiIntegration } from './api-integration/api-integration';
+import { StudentCrud } from './student-crud/student-crud';
 
 export const routes: Routes = [
     {
@@ -71,6 +72,10 @@ export const routes: Routes = [
      {
         path:"api-integration",
         component:ApiIntegration
+     },
+     {
+        path:"student-crud",
+        component: StudentCrud
      }
    
 ];
