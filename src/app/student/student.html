@@ -4,4 +4,10 @@
 <button type="button" class="btn btn-outline-success"[routerLink]="['/typescript']">Go to typescript</button>
 
 
- 
+ <h2>Student List</h2>
+<ul>
+  <li *ngFor="let student of students">
+    ID: {{ student.id }} | Name: {{ student.name }} | Course: {{ student.course }}
+  </li>
+</ul>
+
