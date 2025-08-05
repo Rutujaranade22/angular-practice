@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Alert } from "../reusable-components/alert/alert";
 
 @Component({
   selector: 'app-typescript',
-  imports: [],
+  imports: [Alert],
   templateUrl: './typescript.html',
   styleUrl: './typescript.css'
 })

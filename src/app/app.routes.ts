@@ -16,7 +16,7 @@ import { UserRegistration } from './user-registration/user-registration';
 import { ApiIntegration } from './api-integration/api-integration';
 import { StudentCrud } from './student-crud/student-crud';
 import { DataService } from './data-service';
-
+ 
 export const routes: Routes = [
     {
         path:"student",
@@ -78,7 +78,6 @@ export const routes: Routes = [
         path:"student-crud",
         component: StudentCrud
      },
-     {path:"service",
-        component:DataService
-     }
+
+     
 ];
